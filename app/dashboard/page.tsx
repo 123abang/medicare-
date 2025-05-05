@@ -16,6 +16,7 @@ import {
   X,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Avatar from './images/download.jpeg'
 
 type HealthPlan = {
   id: string
@@ -97,7 +98,7 @@ export default function DashboardPage() {
           <div className="flex flex-col items-center py-6 border-b border-[#e1e1e1]">
             <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden mb-2">
               <Image
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80"
+                src={Avatar}
                 alt="Jane's profile"
                 width={96}
                 height={96}
@@ -803,13 +804,13 @@ export default function DashboardPage() {
                     <Menu className="h-6 w-6" />
                   </button>
                   <div className="relative w-16 h-16 sm:w-24 sm:h-24 rounded-full overflow-hidden">
-                    <Image
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=256&q=80"
+                    {/* <Image
+                      src={Avatar}
                       alt="Jane's profile"
                       width={96}
                       height={96}
                       className="object-cover"
-                    />
+                    /> */}
                   </div>
                   <div>
                     <h1 className="text-xl sm:text-3xl font-bold text-[#333]">Good Morning, Jane!</h1>
